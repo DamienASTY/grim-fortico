@@ -7,6 +7,29 @@
       mc:Ignorable="d"
       Title="Account" Height="450" Width="800">
     <Grid>
-        <TextBlock>Page du compte</TextBlock>
+        <!-- Affichage des informations -->
+        <Grid Margin="10">
+            <TextBlock x:Name="clientConnected" Text="" VerticalAlignment="Top" HorizontalAlignment="Right" />
+        </Grid>
+
+        <!-- Bloc comptes courants -->
+        <Grid Margin="10,80,10,10">
+            <TextBlock Text="Comptes courants" FontSize="16" FontWeight="Bold" Foreground="Red" />
+            <ListBox Margin="0,30,0,0">
+                <ListBoxItem>Compte courant 1</ListBoxItem>
+                <ListBoxItem>Compte courant 2</ListBoxItem>
+                <ListBoxItem>Compte courant 3</ListBoxItem>
+            </ListBox>
+        </Grid>
+
+        <!-- Bloc comptes épargne -->
+        <Grid Margin="10,220,10,10">
+            <TextBlock Text="Comptes épargne" FontSize="16" FontWeight="Bold" Foreground="Red" />
+            <ListBox Margin="0,30,0,0">
+                <ListBoxItem>Compte épargne 1</ListBoxItem>
+                <ListBoxItem>Compte épargne 2</ListBoxItem>
+                <ListBoxItem>Compte épargne 3</ListBoxItem>
+            </ListBox>
+        </Grid>
     </Grid>
 </Page>
